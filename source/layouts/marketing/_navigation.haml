@@ -1,16 +1,16 @@
 %header.nav-menu-container.pure-u-lg-1-4
-	.nav-menu.pure-u-4-5
+	.nav-menu.pure-u-7-8
 		%nav.menu.pure-u-1
 			%h1
 				=link_to '/' do
 					%figure.logo= image_tag image_path("firestorm-logo.png")
 			%ul.menu-links
-				%li.link=link_to 'Mission', '#'
-				%li.link=link_to 'Community', '#'
-				%li.link=link_to 'Documentation', '#'
-				%li.link=link_to 'Screencasts', '#'
-				%li.link=link_to 'Roadmap', '#'
-				%li.link=link_to 'Patrons', '#'
+				%li.link=link_to 'Mission', '#mission'
+				%li.link=link_to 'Community', '#community'
+				%li.link=link_to 'Documentation', '#documentation'
+				%li.link=link_to 'Screencasts', '#screencasts'
+				%li.link=link_to 'Roadmap', '#roadmap'
+				%li.link=link_to 'Patrons', '#patrons'
 			.social-media
 				=link_to '#' do
 					%i.fa.fa-globe
@@ -24,7 +24,7 @@
 				=link_to '#' do
 					%i.fa.fa-twitter
 			%p.italic-message
-				Build with
+				Built with
 				%i.fa.fa-heart
 				by Dailydrip
 	%footer.nav-bottom.pure-u-1

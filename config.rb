@@ -31,11 +31,17 @@ page '/*.txt', layout: false
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
 
-# helpers do
-#   def some_helper
-#     'Helping'
-#   end
-# end
+helpers do
+
+  def favicon_link_tag(source='source/images/', options={})
+    tag('link', {
+      :rel  => 'shortcut icon',
+      :type => 'image/x-icon',
+      :href => image_path(source)
+    }.merge!(options.symbolize_keys))
+  end
+
+end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
