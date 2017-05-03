@@ -1,0 +1,62 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  @include end_flex();
+  background: $skyblue;
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding: 0;
+  width: 100vw;
+}
+
+a {
+  color: $tundora;
+  cursor: pointer;
+  text-decoration: none;
+	transition: all 1s;
+  &:hover {
+    color: $punch;
+  }
+}
+
+img {
+	max-width: 100%;
+}
+
+figure {
+	margin: auto;
+}
+
+ul, li {
+	list-style: none;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+p, h1,h2,h3,
+h4,h5,h6, a,
+div,article,section,
+header,nav,form {
+  font-family: $primary-font-family;
+  line-height: 1.25rem;
+}
+
+.pure-g {
+  letter-spacing: 0;
+}
+
+.message,
+.italic-message {
+  color: rgba($tundora, .85);
+  font-family: $primary-font-family;
+  font-size: 1rem;
+}
+
+.italic-message {
+  font-style: italic;
+}

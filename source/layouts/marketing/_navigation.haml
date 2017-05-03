@@ -1,0 +1,34 @@
+%header.nav-menu-container.pure-u-lg-1-4
+	.nav-menu.pure-u-4-5
+		%nav.menu.pure-u-1
+			%h1
+				=link_to '/' do
+					%figure.logo= image_tag image_path("firestorm-logo.png")
+			%ul.menu-links
+				%li.link=link_to 'Mission', '#'
+				%li.link=link_to 'Community', '#'
+				%li.link=link_to 'Documentation', '#'
+				%li.link=link_to 'Screencasts', '#'
+				%li.link=link_to 'Roadmap', '#'
+				%li.link=link_to 'Patrons', '#'
+			.social-media
+				=link_to '#' do
+					%i.fa.fa-globe
+				=link_to '#' do
+					%i.fa.fa-github
+				=link_to '#' do
+					%i.kickstarter
+						.k-bar
+						.k-bar-top
+						.k-bar-bottom
+				=link_to '#' do
+					%i.fa.fa-twitter
+			%p.italic-message
+				Build with
+				%i.fa.fa-heart
+				by Dailydrip
+	%footer.nav-bottom.pure-u-1
+		%p.message
+			Firestorm powered by:
+		%p.italic-message
+			Elixir, Phoenix, Elm, JavaScript

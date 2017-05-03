@@ -1,0 +1,84 @@
+.homepage-container {
+  @include centered_flex();
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  padding-top: 7.5%;
+  position: relative;
+  &:before {
+    backface-visibility: visible;
+    background: white;
+    border: solid 0.2rem $towergray;
+    content: 'Fork me on Github';
+    font-family: "Fira Sans",Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    font-size: .75rem;
+    outline: .05rem solid transparent;
+    padding: .1% 7.5%;
+    position: absolute;
+    right: -5%;
+    top: 5%;
+    transform: rotate(42.5deg);
+    z-index: 10;
+  }
+}
+
+.publicity-text {
+  @include centered_flex();
+}
+
+.text {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 1.45rem;
+}
+
+.mobile-recipe {
+  .publicity-text {
+    height: 45%;
+    justify-content: flex-end;
+  }
+  .text {
+    padding-right: 15%;
+    text-align: right;
+    width: 50%;
+  }
+  .mobile-image {
+    margin-left: 25%;
+    max-width: 60%;
+  }
+}
+
+.tablet-recipe {
+  position: relative;
+  &:after {
+    background: rgba(69,185,230,0.7);
+    bottom: -10%;
+    content: '';
+    height: 50%;
+    position: absolute;
+    right: 0;
+    width: 120%;
+    z-index: -1;
+  }
+  .publicity-text {
+    height: 30%;
+  }
+  .text {
+    width: 60%;
+  }
+}
+.tablet-image,
+.mobile-image {
+  position: relative;
+  &:before {
+    border-color: transparent rgba(69,185,230,0.7);
+    border-style: solid;
+    border-width: 70rem 25rem 0rem 0rem;
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 7.5%;
+    z-index: -1;
+  }
+}

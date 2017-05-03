@@ -1,0 +1,74 @@
+.nav-menu-container {
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  &:before {
+    background: white;
+    content: '';
+    height: 100%;
+    left: 5%;
+    position: absolute;
+    top: 0;
+    transform: skewx(-5deg);
+    width: 100%;
+    z-index: 1;
+  }
+  .nav-menu {
+    background: white;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+  }
+  .menu,
+  .nav-bottom {
+    padding: 7.5%;
+  }
+  .menu-links,
+  .social-media,
+  .italic-message,
+  .message {
+    padding-left: 13.5%;
+  }
+  .link,
+  .social-media {
+    margin-bottom: 1rem;
+  }
+  .link {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  .fa {
+    font-size: 1.5rem;
+    &.fa-heart {
+      color: $valencia;
+    }
+  }
+  .social-media {
+    @include centered_flex();
+    justify-content: flex-start;
+    i {
+      color: $towergray;
+      margin-right: .5rem;
+      transition: all .5s;
+    }
+    i:hover {
+      color: $punch;
+    }
+  }
+  .nav-bottom {
+    bottom: 0;
+    left: 0;
+    padding-right: 0;
+    position: absolute;
+    z-index: 3;
+    .italic-message,
+    .message {
+      padding-left: 10%;
+    }
+  }
+}
+
+.kickstarter {
+  @include kick_icon();
+}
