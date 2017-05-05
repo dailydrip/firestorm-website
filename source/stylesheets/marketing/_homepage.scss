@@ -1,73 +1,94 @@
 .homepage {
-  overflow-x: hidden;
-  overflow-y: scroll;
+  @include lg {
+    overflow: hidden;
+  }
 }
 
 .homepage-container {
   @include centered_flex();
-  align-items: flex-start;
-  flex-wrap: nowrap;
+  justify-content: flex-start;
   overflow: hidden;
   position: relative;
+  @include lg {
+    align-items: flex-start;
+    height: 100vh;
+    justify-content: flex-end;
+  }
   .gibbon {
     position: absolute;
-    right: 0;
     top: 0;
+    width: 8rem;
     z-index: 1;
+    &.left {
+      left: 0;
+      @include lg {
+        display: none;
+      }
+    }
+    &.right {
+      display: none;
+      right: 0;
+      @include lg {
+        display: block;
+      }
+    }
   }
 }
 
 .publicity-text {
   @include centered_flex();
-}
-
-.text {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
   line-height: 1.45rem;
+  @include md {
+    font-size: 1.35rem;
+  }
+  &.top {
+    text-align: right;
+    margin-left: 15%;
+    padding: 2rem 1rem 1rem;
+    width: 10rem;
+    @include md {
+      margin: 15% 7.5% 0 0;
+      padding: 2rem 1rem;
+      width: 15rem;
+    }
+  }
+  span {
+    width: 8rem;
+    @include sm {
+      width: 12rem;
+    }
+    @include md {
+      width: 17rem;
+    }
+  }
 }
 
-.mobile-recipe,
 .tablet-recipe {
-  @include end_flex();
-  height: 100%;
+  margin-right: -7.5%;
+  margin-top: 3.5%;
 }
 
 .mobile-recipe {
-  align-items: flex-end;
-  .publicity-text {
-    align-self: flex-end;
-    justify-content: flex-end;
-  }
-  .text {
-    width: 60%;
-    text-align: right;
-  }
-  .mobile-image {
-    margin: 0;
-    width: 45%;
-  }
-}
-
-.tablet-recipe {
+  @include flex_box();
   align-items: center;
-  position: relative;
-  &:after {
-    background: rgba($pictonblue, .7);
-    bottom: -10%;
-    content: '';
-    height: 50%;
+  background-color: $pictonblue;
+  border-radius: 6rem 0 0;
+  margin-top: 2rem;
+  padding-bottom: 4rem;
+  @include lg {
+    align-items: flex-end;
+    bottom: 0;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
     position: absolute;
-    right: 0;
-    width: 120%;
     z-index: -1;
   }
   .publicity-text {
-    width: 70%;
-  }
-  .text {
-    margin-top: -1.5rem;
-    width: 65%;
+    margin-bottom: 7.5vh;
   }
 }
 
@@ -75,30 +96,60 @@
 .mobile-image {
   position: relative;
   &:before {
-    border-color: transparent rgba($pictonblue, .7);
-    border-style: solid;
-    border-width: 70rem 45rem 0rem 0rem;
-    content: "";
+    background-color: $pictonblue;
+    content: '';
+    height: 120%;
+    left: -15%;
     position: absolute;
-    right: 100%;
     top: 7.5%;
+    transform: skew(-15deg);
     z-index: -1;
+    width: 100%;
+    @include lg {
+      left: -22.5%;
+      transform: skew(-22.5deg);
+    }
+  }
+}
+
+.mobile-image {
+  margin-left: -7.5%;
+  &:before {
+    display: none;
+    @include lg {
+      display: block;
+      left: -42.5%;
+    }
+  }
+  &:after {
+    background-color: darken($pictonblue, 10%);
+    content: '';
+    height: 50%;
+    left: -12.5%;
+    position: absolute;
+    bottom: -50%;
+    transform: skew(-15deg);
+    z-index: 1;
+    width: 100%;
+    @include lg {
+      display: none;
+    }
+  }
+}
+
+.tablet-image {
+  margin-left: 35%;
+  @include lg {
+    margin: 0 -15% 0 0;
   }
 }
 
 .mobile-image:before {
-  top: 7.5%;
-}
 
-.tablet-image {
-  margin: 0;
-  max-width: 80%;
-  &:before {
-    top: 5%;
-  }
 }
 
 .roadmap {
+  display: none;
   height: 100vh;
   position: relative;
   &:before {

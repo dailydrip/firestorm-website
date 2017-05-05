@@ -26,7 +26,7 @@ img {
 }
 
 figure {
-	margin: auto;
+	margin: 0;
 }
 
 ul, li {
@@ -34,16 +34,18 @@ ul, li {
 	margin: 0;
 }
 
-p {
-	margin: 0;
-}
-
 p, h1,h2,h3,
 h4,h5,h6, a,
 div,article,section,
-header,nav,form {
+header,nav,form, li,
+ul, ol, figure {
   font-family: $primary-font-family;
-  line-height: 1.25rem;
+  line-height: 1rem;
+  margin: 0;
+  padding: 0;
+  @include lg {
+    line-height: 1.25rem;
+  }
 }
 
 .pure-g {
@@ -54,7 +56,10 @@ header,nav,form {
 .italic-message {
   color: rgba($tundora, .85);
   font-family: $primary-font-family;
-  font-size: 1rem;
+  font-size: $medium-font-size;
+  @include md {
+    font-size: 1rem;
+  }
 }
 
 .italic-message {

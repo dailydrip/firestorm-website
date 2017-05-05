@@ -134,3 +134,14 @@
     width: .6rem;
   }
 }
+
+//===== Fade Screen =====
+
+@mixin fade_screen {
+  display: none;
+  background: rgba(black, .4);
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}

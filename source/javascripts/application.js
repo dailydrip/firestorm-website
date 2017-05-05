@@ -7,6 +7,36 @@ jQuery(document).ready(function() {
 		$(this).addClass('active');
 	});
 
+	$('.hamburguer').click(function(e) {
+		e.preventDefault();
+		var menu = $('.nav-menu-container').css('left');
+		var header = $('.nav-menu-container');
+		var fade = $('.fade-screen');
+		if(menu != '0px') {
+			header.animate({
+	      left: '0'
+			}, 500);
+			fade.css('display', 'block');
+		}else {
+			header.animate({
+	      left: '-100%'
+			}, 500);
+			fade.css('display', 'none');
+		}
+
+	});
+
+	$( window ).resize(function() {
+		windowWidth = $(window).width();
+		var fadeblock = $('.fade-screen').css('display');
+		if (windowWidth > 993) {
+			if (fadeblock == 'block') {
+				$('.fade-screen').css('display', 'none');
+			}
+			$('.nav-menu-container').css('left', '0');
+		}
+	});
+
 });
 
 var active_class = function() {
