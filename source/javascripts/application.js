@@ -29,11 +29,17 @@ jQuery(document).ready(function() {
 	$( window ).resize(function() {
 		windowWidth = $(window).width();
 		var fadeblock = $('.fade-screen').css('display');
+		var menu = $('.nav-menu-container');
 		if (windowWidth > 993) {
 			if (fadeblock == 'block') {
 				$('.fade-screen').css('display', 'none');
 			}
-			$('.nav-menu-container').css('left', '0');
+			menu.css('left', '0');
+		}else {
+			if(menu.css('left') == '0px' && windowWidth > 767){
+				menu.css('left', '-100%');
+				$('.fade-screen').css('display', 'none');
+			}
 		}
 	});
 

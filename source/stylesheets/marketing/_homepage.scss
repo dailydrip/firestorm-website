@@ -74,7 +74,7 @@
 .mobile-recipe {
   @include flex_box();
   align-items: center;
-  background-color: $pictonblue;
+  background-color: darken($skyblue, 5%);
   border-radius: 6rem 0 0;
   margin-top: 2rem;
   padding-bottom: 4rem;
@@ -96,7 +96,7 @@
 .mobile-image {
   position: relative;
   &:before {
-    background-color: $pictonblue;
+    background-color: darken($skyblue, 5%);
     content: '';
     height: 120%;
     left: -15%;
@@ -122,17 +122,24 @@
     }
   }
   &:after {
-    background-color: darken($pictonblue, 10%);
+    background-color: darken($skyblue, 15%);
     content: '';
     height: 50%;
-    left: -12.5%;
+    left: -20%;
     position: absolute;
-    bottom: -50%;
+    bottom: -48%;
     transform: skew(-15deg);
     z-index: 1;
     width: 100%;
     @include lg {
       display: none;
+    }
+  }
+  .mobile-complete {
+    position: relative;
+    z-index: 2;
+    @include lg {
+      margin-bottom: -25%;
     }
   }
 }
@@ -141,24 +148,5 @@
   margin-left: 35%;
   @include lg {
     margin: 0 -15% 0 0;
-  }
-}
-
-.mobile-image:before {
-
-}
-
-.roadmap {
-  display: none;
-  height: 100vh;
-  position: relative;
-  &:before {
-    background: black;
-    content: '';
-    height: 100%;
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
-    width: .15rem;
   }
 }

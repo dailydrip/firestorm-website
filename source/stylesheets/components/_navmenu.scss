@@ -3,7 +3,7 @@
   border-radius: .15rem;
   right: 1rem;
   padding: .35rem;
-  position: absolute;
+  position: fixed;
   top: 1rem;
   z-index: 99;
   @include lg {
@@ -17,16 +17,16 @@
 
 .nav-menu-container {
   background: white;
-  height: 75vh;
+  height: 25rem;
   left: -100%;
   position: fixed;
   top: 0;
   z-index: 9;
   @include x-sm {
-    height: 85vh;
+    height: 17.5rem;
   }
   @include md {
-    height: 75vh;
+    height: 25rem;
   }
   @include lg {
     background: transparent;
@@ -82,7 +82,7 @@
     @include x-sm {
       padding: .75rem 7.5% 0;
     }
-    @include md {
+    @include lg {
       padding: 7.5%;
     }
   }
@@ -92,7 +92,7 @@
   .message {
     padding-left: 2.3rem;
     @include lg {
-      padding-left: 13.5%;
+      padding-left: 2.15rem;
     }
   }
   .menu-links {
@@ -112,7 +112,7 @@
     }
   }
   .link {
-    font-size: $medium-font-size;
+    font-size: 1rem;
     font-weight: 500;
     @include md {
       font-size: 1.25rem;
@@ -157,7 +157,11 @@
     .message {
       padding-left: 2.1rem;
       @include lg {
-        padding-left: 10%;
+        padding-left: 2.15rem;
+        width: 70%;
+      }
+      @include xl {
+        width: 100%;
       }
     }
   }

@@ -1,0 +1,154 @@
+.roadmap {
+  display: none;
+  position: relative;
+  @include lg {
+    height: 100vh;
+    overflow: hidden;
+  }
+  &:before {
+    background: $tundora;
+    content: '';
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: .15rem;
+  }
+  @include lg {
+
+  }
+}
+
+.roadmap-container {
+  padding: 4rem 0 2rem;
+  @include lg {
+    height: 100%;
+    padding: 0;
+    position: relative;
+  }
+}
+
+.message-box {
+  @include column_flex();
+  @include lg {
+    flex-direction: row;
+    position: absolute;
+    &:nth-child(1) {
+      top: 10%;
+    }
+    &:nth-child(2) {
+      top: 25%;
+    }
+    &:nth-child(3) {
+      top: 45%;
+    }
+    &:nth-child(4) {
+      top: 65%;
+    }
+    &:nth-child(5) {
+      top: 75%;
+    }
+  }
+  &.right {
+    margin-left: 50%;
+    @include lg {
+      justify-content: flex-start;
+    }
+    .arrow {
+      @include flex_box();
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .arrow-line {
+      margin-right: .75rem;
+    }
+    .message {
+      @include lg {
+        order: 2;
+        margin-left: 5%;
+      }
+    }
+  }
+  &.left{
+    text-align: right;
+    @include lg {
+      justify-content: flex-end;
+    }
+    .arrow {
+      @include end_flex();
+      align-items: center;
+    }
+    .arrow-line {
+      margin-left: .75rem;
+    }
+    .message {
+      @include lg {
+        margin-right: 5%;
+      }
+    }
+  }
+  &.center {
+    background: white;
+    margin-left: 25%;
+    margin-top: .5rem;
+    position: relative;
+    @include lg {
+      justify-content: center;
+      margin-left: 33.3333%;
+      margin-top: 2.5%;
+      padding: 0;
+    }
+    @include xl {
+      margin-top: 5%;
+    }
+    .message {
+      padding: 1rem;
+      width: 9.5rem;
+      @include lg {
+        width: 13rem;
+      }
+    }
+    .date,
+    .publicity-text {
+      color: $tundora;
+    }
+    .date {
+      text-align: center;
+    }
+  }
+  .message {
+    width: 7rem;
+    @include lg {
+      width: 12rem;
+    }
+    @include xl {
+      width: 17rem;
+    }
+  }
+  .date {
+    color: white;
+    font-style: italic;
+    font-weight: 200;
+  }
+  .publicity-text {
+    font-size: .9rem;
+    font-style: italic;
+    @include lg {
+      font-size: 1.25rem;
+    }
+  }
+  .arrow {
+    @include lg {
+      width: auto;
+    }
+  }
+  .fa {
+    color: white;
+    font-size: 2.5rem;
+  }
+  .arrow-line {
+    background: $tundora;
+    height: .15rem;
+    width: 5rem;
+  }
+}
