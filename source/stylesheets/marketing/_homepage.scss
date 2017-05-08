@@ -1,0 +1,178 @@
+.homepage {
+  @include lg {
+    overflow: hidden;
+  }
+}
+
+.homepage-container {
+  @include centered_flex();
+  justify-content: flex-start;
+  overflow: hidden;
+  position: relative;
+  @include lg {
+    height: 100vh;
+  }
+  .gibbon {
+    position: absolute;
+    top: 0;
+    width: 8rem;
+    z-index: 1;
+    &.left {
+      left: 0;
+      @include lg {
+        display: none;
+      }
+    }
+    &.right {
+      display: none;
+      right: 0;
+      @include lg {
+        display: block;
+      }
+    }
+  }
+}
+
+.publicity-text {
+  @include centered_flex();
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.45rem;
+  @include md {
+    font-size: 1.35rem;
+  }
+  &.top {
+    text-align: right;
+    margin-left: 15%;
+    padding: 2rem 1rem 1rem;
+    width: 10rem;
+    @include md {
+      margin: 15% 7.5% 0 0;
+      padding: 2rem 1rem;
+      width: 15rem;
+    }
+    @include lg {
+      right: 57.5%;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 22.5%;
+    }
+  }
+  span {
+    width: 8rem;
+    @include sm {
+      width: 12rem;
+    }
+    @include md {
+      width: 17rem;
+    }
+  }
+}
+
+.tablet-recipe {
+  margin-right: -7.5%;
+  margin-top: 3.5%;
+  @include lg {
+    margin: 0;
+    position: absolute;
+    right: -5%;
+    top: 7.5%;
+  }
+}
+
+.mobile-recipe {
+  @include flex_box();
+  align-items: center;
+  background-color: darken($skyblue, 5%);
+  border-radius: 6rem 0 0;
+  margin-top: 2rem;
+  padding-bottom: 4rem;
+  @include lg {
+    align-items: flex-end;
+    background: transparent;
+    bottom: 0;
+    height: 22.5%;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+  .publicity-text {
+    margin-bottom: 7.5vh;
+    @include lg {
+      bottom: 50%;
+      position: absolute;
+      right: 0;
+      top: 50%;
+    }
+  }
+}
+
+.tablet-image,
+.mobile-image {
+  position: relative;
+  &:before {
+    background-color: darken($skyblue, 5%);
+    content: '';
+    height: 120%;
+    left: -15%;
+    position: absolute;
+    top: 7.5%;
+    transform: skew(-15deg);
+    z-index: -1;
+    width: 100%;
+    @include lg {
+      height: 200%;
+      left: -42.5%;
+      transform: skew(-25deg);
+      width: 200%;
+    }
+  }
+}
+
+.mobile-image {
+  margin-left: -7.5%;
+  @include lg {
+    margin: 0;
+    left: 20%;
+  }
+  &:before {
+    display: none;
+    @include lg {
+      display: block;
+      left: -80%;
+    }
+  }
+  &:after {
+    background-color: darken($skyblue, 15%);
+    content: '';
+    height: 50%;
+    left: -20%;
+    position: absolute;
+    bottom: -48%;
+    transform: skew(-15deg);
+    z-index: 1;
+    width: 100%;
+    @include lg {
+      display: none;
+    }
+  }
+  .mobile-complete {
+    position: relative;
+    z-index: 2;
+    @include lg {
+      margin-bottom: -25%;
+    }
+  }
+}
+
+.tablet-image {
+  margin-left: 35%;
+  @include lg {
+    margin: 0;
+  }
+}

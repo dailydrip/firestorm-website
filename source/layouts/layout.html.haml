@@ -1,0 +1,14 @@
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
+    %title= current_page.data.title || "Fireform"
+    = favicon_link_tag(source='firestorm_mark.ico', options={})
+    = stylesheet_link_tag "application"
+    = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'
+    = javascript_include_tag "application.js"
+  %body._primary-font
+    = partial('layouts/marketing/navigation')
+    = yield

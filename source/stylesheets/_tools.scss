@@ -1,0 +1,147 @@
+/* General Mixins */
+
+// Media Queries
+@mixin xs {
+  @media (min-width: #{$n_xs}) {
+    @content;
+  }
+}
+
+@mixin x-sm {
+  @media (min-width: #{$x-sm}) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: #{$n_sm}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$n_md}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$n_lg}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: #{$n_xl}) {
+    @content;
+  }
+}
+
+@mixin lg-down {
+  @media (max-width: #{$n_lg}) {
+    @content;
+  }
+}
+
+// ======= Container Mixins ========
+
+// Default Flexbox
+@mixin flex_box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+// column flexbox
+@mixin column_flex {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// centered flexbox
+
+@mixin centered_flex {
+  @include flex_box();
+  align-items: center;
+  justify-content: center;
+}
+
+//around flexbox
+
+@mixin around_flex {
+  @include flex_box();
+  justify-content: space-around;
+}
+
+// between flexbox
+
+@mixin between_flex {
+  @include flex_box();
+  justify-content: space-between;
+}
+
+// end flexbox
+
+@mixin end_flex {
+  @include flex_box();
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+// ========= Kickstarter Icon =========
+
+@mixin kick_icon {
+  background: $towergray;
+  border-radius: .15rem;
+  display: inline-block;
+  padding: .65rem;
+  position: relative;
+  transition: all .5s;
+  &:hover {
+    background: $punch;
+  }
+  .k-bar {
+    background: white;
+    border-radius: .15rem;
+    height: .75rem;
+    position: absolute;
+    right: 55%;
+    top: 20%;
+    width: .2rem;
+  }
+  .k-bar-bottom {
+    background: white;
+    border-radius: 10rem;
+    content: '';
+    height: .2rem;
+    right: 20%;
+    position: absolute;
+    top: 50%;
+    transform: rotate(45deg);
+    width: .7rem;
+  }
+  .k-bar-top {
+    background: white;
+    border-radius: .15rem;
+    bottom: 55%;
+    content: '';
+    height: .2rem;
+    right: 20%;
+    position: absolute;
+    transform: rotate(-45deg);
+    width: .6rem;
+  }
+}
+
+//===== Fade Screen =====
+
+@mixin fade_screen {
+  display: none;
+  background: rgba(black, .4);
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
