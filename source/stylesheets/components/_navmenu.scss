@@ -60,9 +60,6 @@
     @include x-sm {
       bottom: -10%;
     }
-    @include md {
-      bottom: -5%;
-    }
     @include lg {
       display: none;
     }
@@ -90,15 +87,12 @@
   .social-media,
   .italic-message,
   .message {
-    padding-left: 2.3rem;
-    @include lg {
-      padding-left: 2.15rem;
-    }
+    padding-left: 2.15rem;
   }
   .menu-links {
     margin: 1rem 0 0;
     @include md {
-      margin: 2rem 0;
+      margin: 1.5rem 0;
     }
   }
   .link,
@@ -108,7 +102,7 @@
       margin-bottom: .25rem;
     }
     @include md {
-      margin-bottom: 1rem;
+      margin-bottom: .75rem;
     }
   }
   .link {
@@ -155,7 +149,10 @@
     z-index: 3;
     .italic-message,
     .message {
-      padding-left: 2.1rem;
+      padding-left: 2rem;
+      @include x-sm {
+        padding-left: 1.7rem;
+      }
       @include lg {
         padding-left: 2.15rem;
         width: 70%;
