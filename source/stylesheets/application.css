@@ -2229,6 +2229,9 @@ ul, ol, figure {
   font-weight: 600;
   margin-top: 4.5rem;
   text-align: center; }
+  @media (min-width: 64em) {
+    .patrons-container .head-text {
+      font-size: 1.75rem; } }
 
 .patrons-recipe {
   display: flex;

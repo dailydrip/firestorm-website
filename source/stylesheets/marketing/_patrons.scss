@@ -9,6 +9,9 @@
     font-weight: 600;
     margin-top: 4.5rem;
 		text-align: center;
+		@include lg {
+			font-size: 1.75rem;
+		}
 	}
 }
 
