@@ -3,7 +3,10 @@ jQuery(document).ready(function() {
 
 	$('.link a').click(function (e) {
 		e.preventDefault();
+		var current = $(this).text();
 		$('.link .active').removeClass('active');
+		$('section').css('display', 'none');
+		$('section#' + current).slideDown(1000);
 		$(this).addClass('active');
 	});
 
