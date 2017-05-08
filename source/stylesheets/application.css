@@ -2181,7 +2181,7 @@ ul, ol, figure {
       .message-box.center {
         margin-top: 5%; } }
     .message-box.center .message {
-      padding: 1rem;
+      padding: 1.5rem 1rem;
       width: 9.5rem; }
       @media (min-width: 64em) {
         .message-box.center .message {
