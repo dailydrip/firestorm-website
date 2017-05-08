@@ -1962,9 +1962,7 @@ ul, ol, figure {
   position: relative; }
   @media (min-width: 64em) {
     .homepage-container {
-      align-items: flex-start;
-      height: 100vh;
-      justify-content: flex-end; } }
+      height: 100vh; } }
   .homepage-container .gibbon {
     position: absolute;
     top: 0;
@@ -2004,6 +2002,13 @@ ul, ol, figure {
         margin: 15% 7.5% 0 0;
         padding: 2rem 1rem;
         width: 15rem; } }
+    @media (min-width: 64em) {
+      .publicity-text.top {
+        right: 57.5%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 22.5%; } }
   .publicity-text span {
     width: 8rem; }
     @media (min-width: 35.5em) {
@@ -2016,6 +2021,12 @@ ul, ol, figure {
 .tablet-recipe {
   margin-right: -7.5%;
   margin-top: 3.5%; }
+  @media (min-width: 64em) {
+    .tablet-recipe {
+      margin: 0;
+      position: absolute;
+      right: -5%;
+      top: 7.5%; } }
 
 .mobile-recipe {
   display: flex;
@@ -2028,14 +2039,23 @@ ul, ol, figure {
   @media (min-width: 64em) {
     .mobile-recipe {
       align-items: flex-end;
+      background: transparent;
       bottom: 0;
-      justify-content: space-around;
+      height: 22.5%;
+      justify-content: space-between;
       margin: 0;
       padding: 0;
       position: absolute;
+      right: 0;
       z-index: -1; } }
   .mobile-recipe .publicity-text {
     margin-bottom: 7.5vh; }
+    @media (min-width: 64em) {
+      .mobile-recipe .publicity-text {
+        bottom: 50%;
+        position: absolute;
+        right: 0;
+        top: 50%; } }
 
 .tablet-image,
 .mobile-image {
@@ -2054,17 +2074,23 @@ ul, ol, figure {
     @media (min-width: 64em) {
       .tablet-image:before,
       .mobile-image:before {
-        left: -22.5%;
-        transform: skew(-22.5deg); } }
+        height: 200%;
+        left: -42.5%;
+        transform: skew(-25deg);
+        width: 200%; } }
 
 .mobile-image {
   margin-left: -7.5%; }
+  @media (min-width: 64em) {
+    .mobile-image {
+      margin: 0;
+      left: 20%; } }
   .mobile-image:before {
     display: none; }
     @media (min-width: 64em) {
       .mobile-image:before {
         display: block;
-        left: -42.5%; } }
+        left: -80%; } }
   .mobile-image:after {
     background-color: #20b3e4;
     content: '';

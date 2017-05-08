@@ -10,9 +10,7 @@
   overflow: hidden;
   position: relative;
   @include lg {
-    align-items: flex-start;
     height: 100vh;
-    justify-content: flex-end;
   }
   .gibbon {
     position: absolute;
@@ -54,6 +52,13 @@
       padding: 2rem 1rem;
       width: 15rem;
     }
+    @include lg {
+      right: 57.5%;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 22.5%;
+    }
   }
   span {
     width: 8rem;
@@ -69,6 +74,12 @@
 .tablet-recipe {
   margin-right: -7.5%;
   margin-top: 3.5%;
+  @include lg {
+    margin: 0;
+    position: absolute;
+    right: -5%;
+    top: 7.5%;
+  }
 }
 
 .mobile-recipe {
@@ -80,15 +91,24 @@
   padding-bottom: 4rem;
   @include lg {
     align-items: flex-end;
+    background: transparent;
     bottom: 0;
-    justify-content: space-around;
+    height: 22.5%;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
     position: absolute;
+    right: 0;
     z-index: -1;
   }
   .publicity-text {
     margin-bottom: 7.5vh;
+    @include lg {
+      bottom: 50%;
+      position: absolute;
+      right: 0;
+      top: 50%;
+    }
   }
 }
 
@@ -106,19 +126,25 @@
     z-index: -1;
     width: 100%;
     @include lg {
-      left: -22.5%;
-      transform: skew(-22.5deg);
+      height: 200%;
+      left: -42.5%;
+      transform: skew(-25deg);
+      width: 200%;
     }
   }
 }
 
 .mobile-image {
   margin-left: -7.5%;
+  @include lg {
+    margin: 0;
+    left: 20%;
+  }
   &:before {
     display: none;
     @include lg {
       display: block;
-      left: -42.5%;
+      left: -80%;
     }
   }
   &:after {
