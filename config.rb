@@ -50,3 +50,7 @@ end
 #   activate :minify_css
 #   activate :minify_javascript
 # end
+
+# This should avoid assets problem in production on github pages
+activate :relative_assets
+set :relative_links, true
