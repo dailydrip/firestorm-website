@@ -2036,7 +2036,7 @@ ul, ol, figure {
     .tablet-recipe {
       margin: 0;
       position: absolute;
-      right: -5%;
+      right: 0;
       top: 7.5%; } }
 
 .mobile-recipe {
@@ -2100,7 +2100,7 @@ ul, ol, figure {
   @media (min-width: 64em) {
     .mobile-image {
       margin: 0;
-      left: 20%; } }
+      left: 22.5%; } }
   .mobile-image:before {
     display: none; }
     @media (min-width: 64em) {
@@ -2180,7 +2180,7 @@ ul, ol, figure {
       .message-box:nth-child(4) {
         top: 65%; }
       .message-box:nth-child(5) {
-        top: 75%; } }
+        top: 80%; } }
   .message-box.right {
     margin-left: 50%; }
     @media (min-width: 64em) {
@@ -2235,11 +2235,8 @@ ul, ol, figure {
         -ms-flex-pack: center;
             justify-content: center;
         margin-left: 33.3333%;
-        margin-top: 2.5%;
-        padding: 0; } }
-    @media (min-width: 80em) {
-      .message-box.center {
-        margin-top: 5%; } }
+        padding: 0;
+        width: 20rem; } }
     .message-box.center .message {
       padding: 1.5rem 1rem;
       width: 9.5rem; }
@@ -2304,7 +2301,7 @@ ul, ol, figure {
       justify-content: center;
   margin-bottom: 2rem; }
   .patrons-recipe .patron {
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     text-align: center; }
     .patrons-recipe .patron img {
       max-width: 3.5rem; }
