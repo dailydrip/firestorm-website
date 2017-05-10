@@ -46,7 +46,7 @@
       top: 65%;
     }
     &:nth-child(5) {
-      top: 75%;
+      top: 80%;
     }
   }
   &.right {
@@ -95,11 +95,8 @@
     @include lg {
       justify-content: center;
       margin-left: 33.3333%;
-      margin-top: 2.5%;
       padding: 0;
-    }
-    @include xl {
-      margin-top: 5%;
+      width: 20rem;
     }
     .message {
       padding: 1.5rem 1rem;
