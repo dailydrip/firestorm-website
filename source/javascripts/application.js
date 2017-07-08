@@ -8,10 +8,12 @@ jQuery(document).ready(function() {
   active_class();
 
   $(".link a").click(function(e) {
-    var current = $(this).attr("href").replace(/\#/, "");
-    $(".link .active").removeClass("active");
-    displaySection(current);
-    $(this).addClass("active");
+    if ($(this).attr("href")[0] == "#") {
+      var current = $(this).attr("href").replace(/\#/, "");
+      $(".link .active").removeClass("active");
+      displaySection(current);
+      $(this).addClass("active");
+    }
   });
 
   $(".hamburger").click(function(e) {
