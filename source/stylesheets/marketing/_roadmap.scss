@@ -1,10 +1,6 @@
 .roadmap {
   display: none;
   position: relative;
-  @include lg {
-    height: 100vh;
-    overflow: hidden;
-  }
   &:before {
     background: $tundora;
     content: '';
@@ -14,41 +10,20 @@
     transform: translateX(-50%);
     width: .15rem;
   }
-  @include lg {
-
-  }
 }
 
 .roadmap-container {
-  padding: 4rem 0 2rem;
+  padding-top: 4rem;
+  display: flex;
+  flex-flow: column nowrap;
   @include lg {
     height: 100%;
     padding: 0;
-    position: relative;
   }
 }
 
 .message-box {
   @include column_flex();
-  @include lg {
-    flex-direction: row;
-    position: absolute;
-    &:nth-child(1) {
-      top: 10%;
-    }
-    &:nth-child(2) {
-      top: 25%;
-    }
-    &:nth-child(3) {
-      top: 45%;
-    }
-    &:nth-child(4) {
-      top: 65%;
-    }
-    &:nth-child(5) {
-      top: 80%;
-    }
-  }
   &.right {
     margin-left: 50%;
     @include lg {
@@ -106,8 +81,9 @@
       }
     }
     .date,
-    .publicity-text {
+    .text {
       color: $tundora;
+      margin-bottom: 0;
     }
     .date {
       text-align: center;
@@ -127,9 +103,11 @@
     font-style: italic;
     font-weight: 200;
   }
-  .publicity-text {
-    font-size: .9rem;
+  .text {
+    font-size: 1rem;
     font-style: italic;
+    line-height: 1.25rem;
+    color: $white;
     @include lg {
       font-size: 1.25rem;
     }

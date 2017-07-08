@@ -2,7 +2,7 @@
   .message
     %p.date
       = message[:date]
-    %h3.publicity-text
+    %p.text
       = message[:text].html_safe
   - unless side == :center
     .pure-u-1.arrow
