@@ -11,17 +11,21 @@
 <script src="javascripts/application.js"></script>
 </head>
 <body class='_primary-font'>
-<label class='hamburguer'>
+<label class='hamburger'>
 <i class='fa fa-bars'></i>
 </label>
 <header class='nav-menu-container pure-u-1 pure-u-lg-1-4'>
 <div class='nav-menu pure-u-7-8'>
 <nav class='menu pure-u-1'>
 <h1>
-<a href="/firestormforum.org"><figure class='logo'><img src="images/firestorm-logo.png" alt="Firestorm logo" /></figure>
+<a href="/"><figure class='logo'><img src="images/firestorm-logo.png" alt="Firestorm logo" /></figure>
 </a></h1>
 <ul class='menu-links'>
 <li class='link'><a href="#mission">Mission</a></li>
+<li class='link'>
+<a href="http://forum.firestormforum.org">Forum
+<i class='fa fa-external-link'></i>
+</a></li>
 <li class='link'><a href="#community">Community</a></li>
 <li class='link'><a href="#documentation">Documentation</a></li>
 <li class='link'><a href="#screencasts">Screencasts</a></li>
@@ -29,19 +33,19 @@
 <li class='link'><a href="#patrons">Patrons</a></li>
 </ul>
 <div class='social-media'>
-<a href="#"><i class='fa fa-globe'></i>
-</a><a href="#"><i class='fa fa-github'></i>
-</a><a href="#"><i class='kickstarter'>
+<a href="https://www.dailydrip.com"><i class='fa fa-globe'></i>
+</a><a href="http://www.github.com/dailydrip/firestorm"><i class='fa fa-github'></i>
+</a><a href="https://www.kickstarter.com/projects/1003377429/firestorm-an-open-source-forum-in-phoenix-from-eli"><i class='kickstarter'>
 <div class='k-bar'></div>
 <div class='k-bar-top'></div>
 <div class='k-bar-bottom'></div>
 </i>
-</a><a href="#"><i class='fa fa-twitter'></i>
+</a><a href="http://www.twitter.com/dailydripcom"><i class='fa fa-twitter'></i>
 </a></div>
 <p class='italic-message'>
 Built with
 <i class='fa fa-heart'></i>
-by Dailydrip
+by <a href="https://www.dailydrip.com">DailyDrip</a>
 </p>
 </nav>
 </div>
@@ -50,7 +54,12 @@ by Dailydrip
 Firestorm powered by:
 </p>
 <p class='italic-message'>
-Elixir, Phoenix, Elm, JavaScript
+<a href="http://www.elixir-lang.org">Elixir</a>
+,
+<a href="http://www.phoenixframework.org">Phoenix</a>
+, and
+<a href="http://www.elm-lang.org">Elm</a>
+.
 </p>
 </footer>
 </header>
@@ -59,7 +68,7 @@ Elixir, Phoenix, Elm, JavaScript
 <section class='pure-u-lg-4-5 homepage' id='homepage'>
 <div class='homepage-container pure-u-1'>
 <h2>
-<a href="https://github.com/dailydrip/firestormforum.org"><img src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" class="gibbon right" alt="68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" />
+<a href="https://github.com/dailydrip/firestorm"><img src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" class="gibbon right" alt="68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" />
 <img src="https://camo.githubusercontent.com/c6286ade715e9bea433b4705870de482a654f78a/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f77686974655f6666666666662e706e67" class="gibbon left" alt="68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f77686974655f6666666666662e706e67" />
 </a></h2>
 <h3 class='publicity-text top pure-u-1'>
@@ -80,130 +89,1849 @@ An Open Source Phoenix-based forum and comment system
 </div>
 </div>
 </section>
+<section class='pure-u-1 pure-u-lg-3-4 mission' id='mission'>
+<main>
+<h2>Mission</h2>
+<p>DailyDrip set out to build a real-world production Phoenix application. We figured the Elixir community could use a good Forum system and we wanted to use it for comments on DailyDrip, so here we are eh?</p>
+</main>
+</section>
+
 <section class='pure-u-1 pure-u-lg-3-4 roadmap' id='roadmap'>
-<div class='roadmap-container pure-u-1'>
-<div class='pure-u-1-2 message-box left'>
+<main class='roadmap-container pure-u-1'>
+<div class='left message-box pure-u-1-2'>
 <div class='message'>
 <p class='date'>
-Mar 22, 2017
+July 10, 2017
 </p>
-<h3 class='publicity-text'>
-Curabitur lobortis id lorem id bibendum. Ut id consectetur
-</h3>
-</div>
-<div class='pure-u-1 arrow'>
-<i class='fa fa-angle-double-left'></i>
-<div class='arrow-line'></div>
-</div>
-</div>
-<div class='pure-u-1-2 message-box right'>
-<div class='message'>
-<p class='date'>
-Feb 13, 2017
+<p class='text'>
+1.0.0-rc1 released.
 </p>
-<h3 class='publicity-text'>
-Mobile designs done for all major features in the MVP. First 10 episodes of Elixir live on DailyDrip!
-</h3>
 </div>
 <div class='pure-u-1 arrow'>
 <div class='arrow-line'></div>
 <i class='fa fa-angle-double-right'></i>
 </div>
 </div>
-<div class='pure-u-1-2 message-box left'>
+
+<div class='message-box pure-u-1-2 right'>
 <div class='message'>
 <p class='date'>
-Jan 2017
+April 26, 2017
 </p>
-<h3 class='publicity-text'>
-Open source design and features meetings via Bigmarker
-</h3>
+<p class='text'>
+First <a href='https://www.kickstarter.com/projects/1003377429/firestorm-an-open-source-forum-in-phoenix-from-eli/posts/1869930'>alpha release announced</a>.
+</p>
 </div>
 <div class='pure-u-1 arrow'>
 <i class='fa fa-angle-double-left'></i>
 <div class='arrow-line'></div>
 </div>
 </div>
-<div class='pure-u-1-2 message-box right'>
+
+<div class='left message-box pure-u-1-2'>
 <div class='message'>
 <p class='date'>
-Dec 23, 2016
+March - April, 2017
 </p>
-<h3 class='publicity-text'>
+<p class='text'>
+Lots of work went into building the first prototype and beginning to dogfood.
+</p>
+</div>
+<div class='pure-u-1 arrow'>
+<div class='arrow-line'></div>
+<i class='fa fa-angle-double-right'></i>
+</div>
+</div>
+
+<div class='message-box pure-u-1-2 right'>
+<div class='message'>
+<p class='date'>
+February 13, 2017
+</p>
+<p class='text'>
+<a href='https://www.kickstarter.com/projects/1003377429/firestorm-an-open-source-forum-in-phoenix-from-eli/posts/1806748'>Design assets shared</a> and <a href='https://www.dailydrip.com/topics/elixir'>first 10 free Elixir episodes completed.</a>
+</p>
+</div>
+<div class='pure-u-1 arrow'>
+<i class='fa fa-angle-double-left'></i>
+<div class='arrow-line'></div>
+</div>
+</div>
+
+<div class='left message-box pure-u-1-2'>
+<div class='message'>
+<p class='date'>
+January 28, 2017
+</p>
+<p class='text'>
+<a href='https://www.kickstarter.com/projects/1003377429/firestorm-an-open-source-forum-in-phoenix-from-eli/posts/1781464'>Design meetings have been ongoing for four weeks</a>
+</p>
+</div>
+<div class='pure-u-1 arrow'>
+<div class='arrow-line'></div>
+<i class='fa fa-angle-double-right'></i>
+</div>
+</div>
+
+<div class='message-box pure-u-1-2 right'>
+<div class='message'>
+<p class='date'>
+December 23, 2016
+</p>
+<p class='text'>
 Successfully raised $22,186 with 338 backers.
-</h3>
+</p>
+</div>
+<div class='pure-u-1 arrow'>
+<i class='fa fa-angle-double-left'></i>
+<div class='arrow-line'></div>
+</div>
+</div>
+
+<div class='left message-box pure-u-1-2'>
+<div class='message'>
+<p class='date'>
+November 23, 2016
+</p>
+<p class='text'>
+The Firestorm started brewing on Kickstarter.
+</p>
 </div>
 <div class='pure-u-1 arrow'>
 <div class='arrow-line'></div>
 <i class='fa fa-angle-double-right'></i>
 </div>
 </div>
-<div class='pure-u-1-2 message-box center'>
+
+<div class='center message-box pure-u-1-2'>
 <div class='message'>
 <p class='date'>
-Nov 23, 2016
+November 23, 2016
 </p>
-<h3 class='publicity-text'>
+<p class='text'>
 The Firestorm started brewing on Kickstarter.
-</h3>
+</p>
 </div>
 </div>
-</div>
+
+</main>
 </section>
 
 <section class='pure-u-1 pure-u-lg-3-4 patrons' id='patrons'>
-<div class='patrons-container pure-u-1'>
-<h2 class='pure-u-1 head-text'>
-Our wonderful patrons:
+<main>
+<h2>
+Thanks for making Firestorm possible
 </h2>
-<div class='pure-u-1 patrons patrons-recipe'>
+<hr>
+<h2>
+Patron Saints
+</h2>
+<div class='pure-u-1 patrons-recipe'>
 <figure class='pure-u-1-2 pure-u-lg-1-3 patron'>
-<img src="images/patron1.png" alt="Patron1" />
-</figure>
-<figure class='pure-u-1-2 pure-u-lg-1-3 patron'>
-<img src="images/patron2.png" alt="Patron2" />
-</figure>
-<figure class='pure-u-1-2 pure-u-lg-1-3 patron'>
-<img src="images/patron3.png" alt="Patron3" />
-</figure>
-<figure class='pure-u-1-2 pure-u-lg-1-3 patron'>
-<img src="images/patron4.png" alt="Patron4" />
-</figure>
-<figure class='pure-u-1-2 pure-u-lg-1-3 patron'>
-<img src="images/patron5.png" alt="Patron5" />
-</figure>
-<figure class='pure-u-1-2 pure-u-lg-1-3 patron'>
-<img src="images/patron6.png" alt="Patron6" />
-</figure>
-<figure class='pure-u-1-2 pure-u-lg-1-3 patron letter'>
-<img src="images/patron7.png" alt="Patron7" />
+<a href="http://www.verschooten.net"><img src="images/patron-verschooten.png" alt="Patron verschooten" />
+</a><figcaption>
+<a href="http://www.verschooten.net">Herman verschooten bvba
+</a><ul class='patron-icons'>
+<li>
+<a href="http://www.verschooten.net"><i class='fa fa-globe'></i>
+</a></li>
+<li>
+<a href="https://github.com/Herman-verschooten-bvba"><i class='fa fa-github-alt'></i>
+</a></li>
+</ul>
+</figcaption>
 </figure>
 <figure class='pure-u-1-2 pure-u-lg-1-3 patron'>
-<img src="images/patron8.png" alt="Patron8" />
+<a href="https://github.com/emeraldkingdom"><img src="images/patron-emerald_kingdom_greenhouse.png" alt="Patron emerald kingdom greenhouse" />
+</a><figcaption>
+<a href="https://github.com/emeraldkingdom">Emerald Kingdom Greenhouse
+</a><ul class='patron-icons'>
+<li>
+<a href="https://github.com/emeraldkingdom"><i class='fa fa-globe'></i>
+</a></li>
+<li>
+<a href="http://twitter.com/autoblackout"><i class='fa fa-twitter'></i>
+</a></li>
+</ul>
+</figcaption>
 </figure>
 <figure class='pure-u-1-2 pure-u-lg-1-3 patron'>
-<img src="images/patron9.png" alt="Patron9" />
-</figure>
-<figure class='pure-u-1-2 pure-u-lg-1-3 patron letter'>
-<img src="images/patron10.png" alt="Patron10" />
-</figure>
-<figure class='pure-u-1-2 pure-u-lg-1-3 patron letter'>
-<img src="images/patron11.png" alt="Patron11" />
-</figure>
-<figure class='pure-u-1-2 pure-u-lg-1-3 patron letter'>
-<img src="images/patron12.png" alt="Patron12" />
-</figure>
-<figure class='pure-u-1-2 pure-u-lg-1-3 patron letter'>
-<img src="images/patron13.png" alt="Patron13" />
+<a href="http://lasseebert.dk/"><img src="images/patron-lasseebert.png" alt="Patron lasseebert" />
+</a><figcaption>
+<a href="http://lasseebert.dk/">Lasse Ebert ApS
+</a><ul class='patron-icons'>
+<li>
+<a href="http://lasseebert.dk/"><i class='fa fa-globe'></i>
+</a></li>
+<li>
+<a href="https://github.com/lasseebert"><i class='fa fa-github-alt'></i>
+</a></li>
+<li>
+<a href="https://twitter.com/lasseebert"><i class='fa fa-twitter'></i>
+</a></li>
+</ul>
+</figcaption>
 </figure>
 <figure class='pure-u-1-2 pure-u-lg-1-3 patron'>
-<img src="images/patron14.png" alt="Patron14" />
+<a href="https://fredbots.com"><img src="images/patron-fred.png" alt="Patron fred" />
+</a><figcaption>
+<a href="https://fredbots.com">Fred
+</a><ul class='patron-icons'>
+<li>
+<a href="https://fredbots.com"><i class='fa fa-globe'></i>
+</a></li>
+<li>
+<a href="https://github.com/fredbots/"><i class='fa fa-github-alt'></i>
+</a></li>
+<li>
+<a href="https://twitter.com/fredchatbots"><i class='fa fa-twitter'></i>
+</a></li>
+<li>
+<a href="https://facebook.com/fredchatbots"><i class='fa fa-facebook'></i>
+</a></li>
+</ul>
+</figcaption>
 </figure>
 <figure class='pure-u-1-2 pure-u-lg-1-3 patron'>
-<img src="images/patron15.png" alt="Patron15" />
+<a href="http://airbitz.co"><img src="images/patron-airbitz.png" alt="Patron airbitz" />
+</a><figcaption>
+<a href="http://airbitz.co">Airbitz
+</a><ul class='patron-icons'>
+<li>
+<a href="http://airbitz.co"><i class='fa fa-globe'></i>
+</a></li>
+<li>
+<a href="https://twitter.com/airbitz"><i class='fa fa-twitter'></i>
+</a></li>
+<li>
+<a href="https://github.com/Airbitz"><i class='fa fa-github'></i>
+</a></li>
+</ul>
+</figcaption>
+</figure>
+<figure class='pure-u-1-2 pure-u-lg-1-3 patron'>
+<a href="https://ElixirConf.com"><img src="images/patron-elixirconf.png" alt="Patron elixirconf" />
+</a><figcaption>
+<a href="https://ElixirConf.com">ElixirConf
+</a><ul class='patron-icons'>
+<li>
+<a href="https://ElixirConf.com"><i class='fa fa-globe'></i>
+</a></li>
+<li>
+<a href="https://twitter.com/elixirconf"><i class='fa fa-twitter'></i>
+</a></li>
+</ul>
+</figcaption>
+</figure>
+<figure class='pure-u-1-2 pure-u-lg-1-3 patron'>
+<a href="https://elixirforum.com"><img src="images/patron-elixirforum.png" alt="Patron elixirforum" />
+</a><figcaption>
+<a href="https://elixirforum.com">Elixir Forum
+</a><ul class='patron-icons'>
+<li>
+<a href="https://elixirforum.com"><i class='fa fa-globe'></i>
+</a></li>
+<li>
+<a href="https://twitter.com/elixirforum"><i class='fa fa-twitter'></i>
+</a></li>
+</ul>
+</figcaption>
+</figure>
+<figure class='pure-u-1-2 pure-u-lg-1-3 patron'>
+<a href="https://github.com/onlydole"><img src="images/patron-onlydole.png" alt="Patron onlydole" />
+</a><figcaption>
+<a href="https://github.com/onlydole">Taylor Dolezal
+</a><ul class='patron-icons'>
+<li>
+<a href="https://github.com/onlydole"><i class='fa fa-globe'></i>
+</a></li>
+<li>
+<a href="https://github.com/onlydole"><i class='fa fa-github-alt'></i>
+</a></li>
+</ul>
+</figcaption>
+</figure>
+<figure class='pure-u-1-2 pure-u-lg-1-3 patron'>
+<a href="https://icing.space"><img src="images/patron-royalicing.png" alt="Patron royalicing" />
+</a><figcaption>
+<a href="https://icing.space">Royal Icing
+</a><ul class='patron-icons'>
+<li>
+<a href="https://icing.space"><i class='fa fa-globe'></i>
+</a></li>
+<li>
+<a href="https://github.com/RoyalIcing"><i class='fa fa-github-alt'></i>
+</a></li>
+<li>
+<a href="http://www.twitter.com/RoyalIcing"><i class='fa fa-twitter'></i>
+</a></li>
+</ul>
+</figcaption>
+</figure>
+<figure class='pure-u-1-2 pure-u-lg-1-3 patron'>
+<a href="https://plataformatec.com.br"><img src="images/patron-plataformatec.png" alt="Patron plataformatec" />
+</a><figcaption>
+<a href="https://plataformatec.com.br">George Guimarães (Plataformatec)
+</a><ul class='patron-icons'>
+<li>
+<a href="https://plataformatec.com.br"><i class='fa fa-globe'></i>
+</a></li>
+<li>
+<a href="https://github.com/georgeguimaraes"><i class='fa fa-github-alt'></i>
+</a></li>
+<li>
+<a href="http://www.twitter.com/georgeguimaraes"><i class='fa fa-twitter'></i>
+</a></li>
+</ul>
+</figcaption>
+</figure>
+<figure class='pure-u-1-2 pure-u-lg-1-3 patron'>
+<a href="http://www.bitmatch.ch"><img src="images/patron-bitmatch.png" alt="Patron bitmatch" />
+</a><figcaption>
+<a href="http://www.bitmatch.ch">bitmatch GmbH
+</a><ul class='patron-icons'>
+<li>
+<a href="http://www.bitmatch.ch"><i class='fa fa-globe'></i>
+</a></li>
+</ul>
+</figcaption>
+</figure>
+<figure class='pure-u-1-2 pure-u-lg-1-3 patron'>
+<a href="http://edgetechstudio.com/"><img src="images/patron-edgetech.png" alt="Patron edgetech" />
+</a><figcaption>
+<a href="http://edgetechstudio.com/">Edge Tech Studio
+</a><ul class='patron-icons'>
+<li>
+<a href="http://edgetechstudio.com/"><i class='fa fa-globe'></i>
+</a></li>
+<li>
+<a href="https://www.github.com/joaomdmoura"><i class='fa fa-github-alt'></i>
+</a></li>
+<li>
+<a href="https://www.twitter.com/joaomdmoura"><i class='fa fa-twitter'></i>
+</a></li>
+<li>
+<a href="http://joaomdmoura.com/"><i class='fa fa-globe'></i>
+</a></li>
+</ul>
+</figcaption>
+</figure>
+<figure class='pure-u-1-2 pure-u-lg-1-3 patron'>
+<a href="http://upptec.se/"><img src="images/patron-upptec.png" alt="Patron upptec" />
+</a><figcaption>
+<a href="http://upptec.se/">Upptec
+</a><ul class='patron-icons'>
+<li>
+<a href="http://upptec.se/"><i class='fa fa-globe'></i>
+</a></li>
+<li>
+<a href="https://github.com/Upptec"><i class='fa fa-github-alt'></i>
+</a></li>
+<li>
+<a href="https://twitter.com/upptec"><i class='fa fa-twitter'></i>
+</a></li>
+</ul>
+</figcaption>
+</figure>
+<figure class='pure-u-1-2 pure-u-lg-1-3 patron'>
+<a href="http://www.getbitboard.com"><img src="images/patron-bitboard.png" alt="Patron bitboard" />
+</a><figcaption>
+<a href="http://www.getbitboard.com">Bitboard
+</a><ul class='patron-icons'>
+<li>
+<a href="http://www.getbitboard.com"><i class='fa fa-globe'></i>
+</a></li>
+<li>
+<a href="https://www.twitter.com/getbitboard"><i class='fa fa-twitter'></i>
+</a></li>
+</ul>
+</figcaption>
 </figure>
 </div>
+<h2>
+Patrons of Great Fame
+</h2>
+<div class='pure-u-1 patrons-recipe'>
+<ul>
+<li>
+<strong>Paul Otto</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/potto007">GitHub</a> ] [ <a href="https://www.ottoops.com">Website</a> ]</p>
+
 </div>
+</li>
+<li>
+<strong>Barnabas Jovanovics</strong>
+<div class='patron-metadata'>
+
+
+</div>
+</li>
+<li>
+<strong>Keith Gaddis</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/karmajunkie">GitHub</a> ] [ <a href="https://www.twitter.com/karmajunkie">Twitter</a> ] [ <a href="http://karmajunkie.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>José Ney Guerrero</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/neydroid">GitHub</a> ] [ <a href="https://www.twitter.com/neydroid">Twitter</a> ] [ <a href="http://www.dak42.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Taylor Dolezal</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/Onlydole">GitHub</a> ] [ <a href="https://www.twitter.com/onlydole">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Franzé Jr.</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/franzejr">GitHub</a> ] [ <a href="https://www.twitter.com/franzejr">Twitter</a> ] [ <a href="http://franzejr.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Andrew Selder</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/aselder">GitHub</a> ] [ <a href="https://www.twitter.com/aselder">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>George Guimarães</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/georgeguimaraes">GitHub</a> ] [ <a href="https://www.twitter.com/georgeguimaraes">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Herman verschooten</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/Hermanverschooten">GitHub</a> ] [ <a href="https://www.twitter.com/HermvJr">Twitter</a> ] [ <a href="http://www.gratwifi.eu">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>João M. D. Moura</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/joaomdmoura">GitHub</a> ] [ <a href="https://www.twitter.com/joaomdmoura">Twitter</a> ] [ <a href="http://joaomdmoura.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Aki "Angry Beard" Ristkari</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/Ristkari">GitHub</a> ] [ <a href="https://www.twitter.com/Ristkari">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Manuel Zubieta</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/mazubieta">GitHub</a> ] [ <a href="https://www.twitter.com/zubnola">Twitter</a> ] [ <a href="http://zubnola.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Cifer</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/cifer-y">GitHub</a> ] [ <a href="https://www.twitter.com/cifery13">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Sean Williamson</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/SuperNullSet">GitHub</a> ] [ <a href="https://www.twitter.com/SuperNullSet">Twitter</a> ] [ <a href="http://supernullset.com/">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Mohamed A. Chenini</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/amchenini">GitHub</a> ] [ <a href="https://www.twitter.com/MohamedChenini">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Richard Wöber</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/rwoeber">GitHub</a> ] [ <a href="http://rwoeber.de">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Kiere El-Shafie</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/kiere">GitHub</a> ] [ <a href="https://www.twitter.com/kiere">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Lasse Ebert</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/lasseebert">GitHub</a> ] [ <a href="https://www.twitter.com/lasseebert">Twitter</a> ] [ <a href="http://lasseebert.dk/">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Mikkel Malmberg</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/mikker">GitHub</a> ] [ <a href="https://www.twitter.com/mikker">Twitter</a> ] [ <a href="https://mikkelmalmberg.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Matt Husby</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/matthusby">GitHub</a> ] [ <a href="https://www.twitter.com/matthusby">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Dilip Gurung</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/dilipgurung">GitHub</a> ] [ <a href="https://www.twitter.com/_dilipgurung">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Milad Rastian</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/slashmili">GitHub</a> ] [ <a href="https://www.twitter.com/slashmili">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Dave Manginelli</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/daveman">GitHub</a> ] [ <a href="https://www.twitter.com/DaveManginelli">Twitter</a> ] [ <a href="http://Voxinusu.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Colin Densem</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/colindensem">GitHub</a> ] [ <a href="https://www.twitter.com/colindensem">Twitter</a> ] [ <a href="http://www.briskoda.net">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Chris Keele</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/christhekeele">GitHub</a> ] [ <a href="https://www.twitter.com/christhekeele">Twitter</a> ] [ <a href="http://chriskeele.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Fabian Jahr</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/fjahr">GitHub</a> ] [ <a href="https://www.twitter.com/fjahr">Twitter</a> ] [ <a href="http://fjahr.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Angel Imaz</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/tierralibre">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Koen Chen</strong>
+<div class='patron-metadata'>
+
+
+</div>
+</li>
+<li>
+<strong>Julius Liu</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/juliusl">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Otis Clements</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/rclements">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Mats Norén</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.twitter.com/mats_cgo">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Mark Hutter</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/mrkhutter">GitHub</a> ] [ <a href="https://www.twitter.com/mrkhutter">Twitter</a> ] [ <a href="http://markhutter.io">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>David Sulc</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/davidsulc">GitHub</a> ] [ <a href="https://www.twitter.com/davidsulc">Twitter</a> ] [ <a href="http://www.davidsulc.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Jeremy Pinnix</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/jpinnix">GitHub</a> ] [ <a href="https://www.twitter.com/jpinnix">Twitter</a> ] [ <a href="http://pixelgrazer.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Fred</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/alfredbaudisch">GitHub</a> ] [ <a href="https://www.twitter.com/alfredbaudisch">Twitter</a> ] [ <a href="http://fredbots.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Josh Hogan</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.twitter.com/joshhogan">Twitter</a> ]</p>
+
+</div>
+</li>
+</ul>
+</div>
+<h2>
+Patrons
+</h2>
+<div class='pure-u-1 patrons-recipe'>
+<ul>
+<li>
+<strong>Kevin ANATOLE</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/kevin-DL">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Trevoke</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/trevoke">GitHub</a> ] [ <a href="https://www.twitter.com/trevoke">Twitter</a> ] [ <a href="http://blog.trevoke.net">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Shamail Saidi</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/Shamail">GitHub</a> ] [ <a href="https://www.twitter.com/shamail_s">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Tan Yeong Sheng</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/yeongsheng-tan">GitHub</a> ] [ <a href="https://www.twitter.com/yeongsheng">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Michael Klett</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/moklett">GitHub</a> ] [ <a href="https://www.twitter.com/moklett">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Nick McGinness</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/NickMcG">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>John Berryman</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/JnBrymn">GitHub</a> ] [ <a href="https://www.twitter.com/JnBrymn">Twitter</a> ] [ <a href="http://thoughtbox.solutions/blog/2016/11/26/consultants-and-cowboys-dont-need-unit-tests">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Sergey Yanovitsky</strong>
+<div class='patron-metadata'>
+
+
+</div>
+</li>
+<li>
+<strong>rich johnson</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/shaolingeek">GitHub</a> ] [ <a href="https://www.twitter.com/shaolingeek">Twitter</a> ] [ <a href="http://shaolingeek.io">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Ian Mackenzie</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/ianmackenzie">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Muhammad Syafiq Faiz</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/syafiqfaiz">GitHub</a> ] [ <a href="http://syafiqfaiz.github.io">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Martin Vrkljan</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/mvrkljan">GitHub</a> ] [ <a href="https://www.twitter.com/mwrks">Twitter</a> ] [ <a href="http://www.inqui.io">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Oliver Searle-Barnes</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/opsb">GitHub</a> ] [ <a href="https://www.twitter.com/ollysb">Twitter</a> ] [ <a href="http://opsb.co.uk">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Kristian Rasmussen</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/Iamkristian">GitHub</a> ] [ <a href="https://www.twitter.com/Iamkristian">Twitter</a> ] [ <a href="http://Krx.io">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Vadim Golub</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/vdmgolub">GitHub</a> ] [ <a href="https://www.twitter.com/vdmgolub">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>David Gomez</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/davgomgar">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Yoann LE TOUCHE</strong>
+<div class='patron-metadata'>
+
+
+</div>
+</li>
+<li>
+<strong>Spiros Gerokostas</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/sger">GitHub</a> ] [ <a href="https://www.twitter.com/sger">Twitter</a> ] [ <a href="http://www.spirosgerokostas.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Ben Damman</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/typesend">GitHub</a> ] [ <a href="https://www.twitter.com/typesend">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>San Diego Elixir / Erlang</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/sdelixir">GitHub</a> ] [ <a href="https://www.twitter.com/sdelixir">Twitter</a> ] [ <a href="http://sdelixir.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>David Bernheisel</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/dbernheisel">GitHub</a> ] [ <a href="https://www.twitter.com/bernheisel">Twitter</a> ] [ <a href="http://bernheisel.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Tito Pandu Brahmanto</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/titopandub">GitHub</a> ] [ <a href="https://www.twitter.com/tito_pandu">Twitter</a> ] [ <a href="http://tito.pandubrahmanto.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Nick Brandaleone</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/nbrandaleone">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Nicholas Orr</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/SoreGums">GitHub</a> ] [ <a href="https://www.twitter.com/SoreGums">Twitter</a> ] [ <a href="http://nicholasorr.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Tjaco Oostdijk</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/drumusician">GitHub</a> ] [ <a href="https://www.twitter.com/drumusician">Twitter</a> ] [ <a href="http://drumusician.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Kai Mies</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/kaimies">GitHub</a> ] [ <a href="https://www.twitter.com/kai_mies">Twitter</a> ] [ <a href="https://edgecube.de">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Esteban Pastorino</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/kitop">GitHub</a> ] [ <a href="https://www.twitter.com/kitopastorino">Twitter</a> ] [ <a href="http://Estebanpastorino.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Pedro Medeiros</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/pedrosnk">GitHub</a> ] [ <a href="https://www.twitter.com/pesnk">Twitter</a> ] [ <a href="http://pemedeiros.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Mike Ratliff</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/Mratliff">GitHub</a> ] [ <a href="https://www.twitter.com/mikeratliff">Twitter</a> ] [ <a href="http://www.enbala.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Alex Filatov</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/alexfilatov">GitHub</a> ] [ <a href="https://www.twitter.com/alexfilatov">Twitter</a> ] [ <a href="http://www.AlexFilatov.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Matthew Machuga</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/machuga">GitHub</a> ] [ <a href="https://www.twitter.com/machuga">Twitter</a> ] [ <a href="http://matthewmachuga.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Jim Speakman</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/fixedgigha">GitHub</a> ] [ <a href="https://www.twitter.com/silentemission">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Walther H Diechmann</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/wdiechmann">GitHub</a> ] [ <a href="https://www.twitter.com/wdiechmann">Twitter</a> ] [ <a href="http://alco.dk">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Wiebe-Marten Wijnja</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/Qqwy">GitHub</a> ] [ <a href="https://www.twitter.com/wiebemarten">Twitter</a> ] [ <a href="http://wmcode.nl">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Liz Vanderkloot</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/lizvdk">GitHub</a> ] [ <a href="https://www.twitter.com/lizvdk">Twitter</a> ] [ <a href="http://lizvdk.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Ventsislav Nikolov</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/ventsislaf">GitHub</a> ] [ <a href="https://www.twitter.com/ventsislaf">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Max Trense</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/mtrense">GitHub</a> ] [ <a href="https://www.twitter.com/mtrense">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Sean Clayton</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/sean-clayton">GitHub</a> ] [ <a href="https://www.twitter.com/seanybingbong">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Uģis Ozols</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/ugisozols">GitHub</a> ] [ <a href="https://www.twitter.com/ugisozols">Twitter</a> ] [ <a href="http://ugisozols.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Caleb Land</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/caleb">GitHub</a> ] [ <a href="https://www.twitter.com/caleb_land">Twitter</a> ] [ <a href="http://caleb.fm">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Samuel Frederick</strong>
+<div class='patron-metadata'>
+
+
+</div>
+</li>
+<li>
+<strong>Josh Cohen</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/j127">GitHub</a> ] [ <a href="https://www.twitter.com/joshhostels">Twitter</a> ] [ <a href="http://artofmemory.com/">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Bing Han</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/tony612">GitHub</a> ] [ <a href="https://www.twitter.com/tony612_han">Twitter</a> ] [ <a href="http://tony612.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Rob</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/robpark">GitHub</a> ] [ <a href="https://www.twitter.com/robpark">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Nate Vick</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/nvick">GitHub</a> ] [ <a href="https://www.twitter.com/natron99">Twitter</a> ] [ <a href="http://natevick.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Andy Webster</strong>
+<div class='patron-metadata'>
+
+
+</div>
+</li>
+<li>
+<strong>Don L</strong>
+<div class='patron-metadata'>
+
+
+</div>
+</li>
+<li>
+<strong>Pete Bevin</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/pbevin">GitHub</a> ] [ <a href="https://www.twitter.com/pbevin">Twitter</a> ] [ <a href="http://www.petebevin.com/">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Chip</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/ChipCoons">GitHub</a> ] [ <a href="http://greenwavesoftware.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Eric Workman</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/ericworkman">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Ross Kaffenberger </strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/rossta">GitHub</a> ] [ <a href="https://www.twitter.com/rossta">Twitter</a> ] [ <a href="https://rossta.net">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Gary Hahn</strong>
+<div class='patron-metadata'>
+
+
+</div>
+</li>
+<li>
+<strong>David G. Chaves</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/davidgchaves">GitHub</a> ] [ <a href="https://www.twitter.com/davidgchaves">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Layla S.</strong>
+<div class='patron-metadata'>
+
+
+</div>
+</li>
+<li>
+<strong>Kayle Paustian</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/Silentagony">GitHub</a> ] [ <a href="https://www.twitter.com/Claritycohq">Twitter</a> ] [ <a href="http://www.clarityapp.co">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Emerald Kingdom Greenhouse</strong>
+<div class='patron-metadata'>
+<p>[ <a href="http://www.emeraldkingdomgreenhouse.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>John Kaczmarek</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/johnkacz">GitHub</a> ] [ <a href="https://www.twitter.com/johnkacz">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Dennis Palmer</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/CoderDennis">GitHub</a> ] [ <a href="https://www.twitter.com/CoderDennis">Twitter</a> ] [ <a href="http://blog.dennispalmer.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>enilsen16</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/enilsen16">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Yinghai Zhao</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/hisea">GitHub</a> ] [ <a href="https://www.twitter.com/zyinghai">Twitter</a> ] [ <a href="http://hisea.me">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Alexander Quine</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/alxndr">GitHub</a> ] [ <a href="http://eleven-twelve.net">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Ethan Sherbondy</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/sherbondy">GitHub</a> ] [ <a href="https://www.twitter.com/sherbondy">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Jonas Beckman</strong>
+<div class='patron-metadata'>
+<p>Kami Development [ <a href="https://www.github.com/kamidev">GitHub</a> ] [ <a href="https://www.twitter.com/jonasbeckman">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Tjshipe</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/Tjshipe">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Bruce Pomeroy</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/brucepom">GitHub</a> ] [ <a href="http://brucepomeroy.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Juraj Hlista</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/jur0">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Brandon Blaylock</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/baroquon">GitHub</a> ] [ <a href="https://www.twitter.com/baroquon">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Elixir Forum</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.twitter.com/elixirforum">Twitter</a> ] [ <a href="https://elixirforum.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Sebastian Losch</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/sloschi">GitHub</a> ] [ <a href="https://www.twitter.com/Loschi42">Twitter</a> ] [ <a href="http://cap3.de">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Jeremy D. Frens</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/jdfrens">GitHub</a> ] [ <a href="https://www.twitter.com/jdfrens">Twitter</a> ] [ <a href="http://www.norecess.org">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Andy Lima</strong>
+<div class='patron-metadata'>
+
+
+</div>
+</li>
+<li>
+<strong>Redmar Kerkhoff</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/redmar">GitHub</a> ] [ <a href="https://www.twitter.com/rjkerkhoff">Twitter</a> ] [ <a href="http://www.creativecode.nl">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Johan Wärlander</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/jwarlander">GitHub</a> ] [ <a href="https://www.twitter.com/jwarlander">Twitter</a> ] [ <a href="https://blog.johanwarlander.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Larry Lv</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/larrylv">GitHub</a> ] [ <a href="https://www.twitter.com/larrylv">Twitter</a> ] [ <a href="http://larrylv.com/">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Agusti Fernandez</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/agustif">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Ryan B. Harvey</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/nihonjinrxs">GitHub</a> ] [ <a href="https://www.twitter.com/CodeAndData">Twitter</a> ] [ <a href="http://datascientist.guru">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Steven Martin</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/Slowbad">GitHub</a> ] [ <a href="https://www.twitter.com/novicks">Twitter</a> ] [ <a href="http://stevenmartin.io">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Jeramy Singleton </strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/JeramyRR">GitHub</a> ] [ <a href="https://www.twitter.com/jeramyRR">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Bryan Bryce</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/BryanJBryce">GitHub</a> ] [ <a href="https://www.twitter.com/BryanJBryce">Twitter</a> ] [ <a href="http://BryceLabs.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Robert Pearce</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/rpearce">GitHub</a> ] [ <a href="https://www.twitter.com/RobertWPearce">Twitter</a> ] [ <a href="http://robertwpearce.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Max Holzheu</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/maxcodes">GitHub</a> ] [ <a href="https://www.twitter.com/maxholzheu">Twitter</a> ] [ <a href="http://medium.com/@maxholzheu">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Setras LLC</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/setras">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Paweł Dawczak</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/pdawczak">GitHub</a> ] [ <a href="https://www.twitter.com/pawel_dawczak">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Tianyi Wang</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/3quarterstack">GitHub</a> ] [ <a href="https://www.twitter.com/3quarterstack">Twitter</a> ] [ <a href="https://www.stackshuttle.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Mark Holmes</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/markholmes">GitHub</a> ] [ <a href="https://www.twitter.com/mrkhlm">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Praveen Perera</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/praveenperera">GitHub</a> ] [ <a href="https://www.twitter.com/praveenperera">Twitter</a> ] [ <a href="https://praveenperera.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Ben Olive</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/Sionide21">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>ElixirConf</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.twitter.com/ElixirConf">Twitter</a> ] [ <a href="https://ElixirConf.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Maximiliano Molina</strong>
+<div class='patron-metadata'>
+
+
+</div>
+</li>
+<li>
+<strong>Chris Paul</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/cmpaul">GitHub</a> ] [ <a href="https://www.twitter.com/idiosynchris">Twitter</a> ] [ <a href="http://hakuna-automata.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Felipe Gasparini</strong>
+<div class='patron-metadata'>
+
+
+</div>
+</li>
+<li>
+<strong>John Mark Untalan</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/jmunts">GitHub</a> ] [ <a href="https://www.twitter.com/jmunts">Twitter</a> ] [ <a href="http://johnmarkuntalan.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Andrew O'Brien</strong>
+<div class='patron-metadata'>
+
+
+</div>
+</li>
+<li>
+<strong>Tan Jay Jun</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/jayjun">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Haak Saxberg</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/haaksmash">GitHub</a> ] [ <a href="https://www.twitter.com/haaksmash">Twitter</a> ] [ <a href="http://haaksmash.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Adam Gamble</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/adamgamble">GitHub</a> ] [ <a href="https://www.twitter.com/adamgamble">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Dima Sharov</strong>
+<div class='patron-metadata'>
+
+
+</div>
+</li>
+<li>
+<strong>Cucufato</strong>
+<div class='patron-metadata'>
+
+
+</div>
+</li>
+<li>
+<strong>Mark Ryall</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/markryall">GitHub</a> ] [ <a href="https://www.twitter.com/markryall">Twitter</a> ] [ <a href="http://mark.ryall.name">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Samnang Chhun</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/samnang">GitHub</a> ] [ <a href="https://www.twitter.com/samnangchhun">Twitter</a> ] [ <a href="http://samnang.me/">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Kamil Paszkowski</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/kamil89">GitHub</a> ] [ <a href="https://www.twitter.com/kamil89p">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Erich Kaderka</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/erich">GitHub</a> ] [ <a href="https://www.twitter.com/kaderka">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Artur Pañach</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/arturictus">GitHub</a> ] [ <a href="https://www.twitter.com/arturictus">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>daktyr</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/daktyr">GitHub</a> ] [ <a href="https://www.twitter.com/daktyr">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Pedro Assumpcao</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/pedroassumpcao">GitHub</a> ] [ <a href="https://www.twitter.com/pedroassumpcao">Twitter</a> ] [ <a href="https://pedroassumpcao.ghost.io">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>RomanK</strong>
+<div class='patron-metadata'>
+
+
+</div>
+</li>
+<li>
+<strong>Jody Albritton</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/jodyalbritton">GitHub</a> ] [ <a href="https://www.twitter.com/jodyalbritton">Twitter</a> ] [ <a href="http://jodyalbritton.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Martin Volerich</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/TheVole">GitHub</a> ] [ <a href="https://www.twitter.com/TheVole">Twitter</a> ] [ <a href="http://photos.volerich.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Carlos Mendonça</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/CarlosMendonca">GitHub</a> ] [ <a href="https://www.twitter.com/chemendonca">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Jean-Michel Garnier</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/jmgarnier">GitHub</a> ] [ <a href="https://www.twitter.com/jmgarnier_">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Zachary Harris</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/z-a-h">GitHub</a> ] [ <a href="https://www.twitter.com/z_a_h_">Twitter</a> ] [ <a href="http://zharr.is">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Walter Seme</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/wseme">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Sebastian Gębski</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/liveweird">GitHub</a> ] [ <a href="https://www.twitter.com/liveweird">Twitter</a> ] [ <a href="https://no-kill-switch.ghost.io/">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Max Sharples</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/msharp">GitHub</a> ] [ <a href="https://www.twitter.com/maxsharples">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Matt Ruzicka</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.twitter.com/mattruzicka">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Mark Wilbur</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://toshuo.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Frank Taylor</strong>
+<div class='patron-metadata'>
+
+
+</div>
+</li>
+<li>
+<strong>Dan Moran</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/fishbelly">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Rogelio Castillo</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/rogelio2k">GitHub</a> ] [ <a href="https://www.twitter.com/rogelio2k">Twitter</a> ] [ <a href="http://rogeliocastillo.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Walter Beller-Morales</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/walterbm">GitHub</a> ] [ <a href="http://walterbellermoral.es/">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Mark Robinson</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/storm255">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Paul Zenden</strong>
+<div class='patron-metadata'>
+
+
+</div>
+</li>
+<li>
+<strong>UpptecOn AB</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/Upptec">GitHub</a> ] [ <a href="http://upptec.se">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Exef</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/Exef">GitHub</a> ] [ <a href="https://www.twitter.com/fmalachowic">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Michael Egli</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/eglimi">GitHub</a> ] [ <a href="http://www.bitmatch.ch">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Jakub Jasiulewicz</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/up2jj">GitHub</a> ] [ <a href="https://www.twitter.com/up2jj">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Lyuben Petrov</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/agit0">GitHub</a> ] [ <a href="https://www.twitter.com/LyubenP">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Tom Stones</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/stones">GitHub</a> ] [ <a href="http://www.tomstones.com.au">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Tomasz Tomczyk</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/tomasz-tomczyk">GitHub</a> ] [ <a href="https://www.twitter.com/tomasztomczyk">Twitter</a> ] [ <a href="http://tomasztomczyk.com/">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Erlang Solutions</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/@esl">GitHub</a> ] [ <a href="https://www.twitter.com/ErlangSolutions">Twitter</a> ] [ <a href="https://www.erlang-solutions.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>IJ</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/ij@internet2.edu">GitHub</a> ] [ <a href="https://www.internet2.edu">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Mark Goody</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/marramgrass">GitHub</a> ] [ <a href="https://www.twitter.com/marramgrass">Twitter</a> ] [ <a href="http://markgoody.ie/">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Konstantin Kudryashov</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/everzet">GitHub</a> ] [ <a href="https://www.twitter.com/everzet">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Derek O'Connell</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/dmoco">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Kosmas Chatzimichalis</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/Kosmas">GitHub</a> ] [ <a href="https://www.twitter.com/Kosmas7">Twitter</a> ] [ <a href="https://42.mach7x.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Lance J Johnson</strong>
+<div class='patron-metadata'>
+
+
+</div>
+</li>
+<li>
+<strong>Jamie</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/jwright">GitHub</a> ] [ <a href="https://www.twitter.com/jwright">Twitter</a> ] [ <a href="http://tatsu.io">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Brian Lawrence</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/brianlawrence2">GitHub</a> ] [ <a href="https://www.twitter.com/importantbrian">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Andy Arminio @5thWall</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/5thWall">GitHub</a> ] [ <a href="https://www.twitter.com/5thWall">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Fred Yankowski</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/fredcy">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Steven Wu</strong>
+<div class='patron-metadata'>
+
+
+</div>
+</li>
+<li>
+<strong>Bjørn Madsen</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/aeons">GitHub</a> ] [ <a href="https://www.twitter.com/bjoernmadsen">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Karmen Blake</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/kblake">GitHub</a> ] [ <a href="https://www.twitter.com/kblake">Twitter</a> ] [ <a href="http://blog.dudeblake.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Yes</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/vjousse">GitHub</a> ] [ <a href="https://www.twitter.com/vjousse">Twitter</a> ] [ <a href="http://vincent.jousse.org">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Simon Prévost</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/simonprev">GitHub</a> ] [ <a href="https://www.twitter.com/simonprev">Twitter</a> ] [ <a href="http://simonprevost.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Jonathan Mundy</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/jonathanmundy">GitHub</a> ] [ <a href="https://www.twitter.com/jonathanmundy">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Bruno Dusausoy</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/bdusauso">GitHub</a> ] [ <a href="https://www.twitter.com/bdusauso">Twitter</a> ] [ <a href="http://blog.codinsanity.be/">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Ferran Selles</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/ferranselles">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Loh Wei Lih</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/willieLOH">GitHub</a> ] [ <a href="https://www.twitter.com/willie_loh">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Andrei Sebastian Cîmpean</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/andreisebastianc">GitHub</a> ] [ <a href="https://www.twitter.com/Andrei_Cimpean">Twitter</a> ] [ <a href="http://andreime.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Locly</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/locly">GitHub</a> ] [ <a href="https://www.twitter.com/locly">Twitter</a> ] [ <a href="https://locly.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Jack Micklethwaite</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/jamick">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>he9lin</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/he9lin">GitHub</a> ] [ <a href="https://www.twitter.com/he9lin">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Victoria Wagman</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.twitter.com/victoriawagman">Twitter</a> ] [ <a href="http://victoriawagman.com">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Sneezing Sleazing</strong>
+<div class='patron-metadata'>
+
+
+</div>
+</li>
+<li>
+<strong>Jean-Luc Geering</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/jlgeering">GitHub</a> ] [ <a href="https://www.twitter.com/jlgeering">Twitter</a> ] [ <a href="https://www.ufirstgroup.com/">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>manuscrypt</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/manuscrypt">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Chae Cramb</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/chaecramb">GitHub</a> ] [ <a href="https://www.twitter.com/ChaeCramb">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Udo</strong>
+<div class='patron-metadata'>
+
+
+</div>
+</li>
+<li>
+<strong>Dustin</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/dmccraw">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Fergus Meiklejohn</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.twitter.com/airuyi">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Patrik Stenmark</strong>
+<div class='patron-metadata'>
+
+
+</div>
+</li>
+<li>
+<strong>John Dowd</strong>
+<div class='patron-metadata'>
+
+
+</div>
+</li>
+<li>
+<strong>Ben Olive</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/Sionide21">GitHub</a> ] [ <a href="https://www.twitter.com/Sionide21">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Tom Brukner</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/xbrukner">GitHub</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Wendy Smoak</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/wsmoak">GitHub</a> ] [ <a href="https://www.twitter.com/wsmoak">Twitter</a> ] [ <a href="http://wsmoak.net">Website</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Marcelo De Polli</strong>
+<div class='patron-metadata'>
+<p>[ <a href="https://www.github.com/mdepolli">GitHub</a> ] [ <a href="https://www.twitter.com/mdepolli">Twitter</a> ]</p>
+
+</div>
+</li>
+<li>
+<strong>Dirk Johnson</strong>
+<div class='patron-metadata'>
+
+
+</div>
+</li>
+</ul>
+</div>
+</main>
+</section>
+
+<section class='pure-u-1 pure-u-lg-3-4 community' id='community'>
+<main>
+<h2>Community</h2>
+<p>There are loads of ways to join the community.</p>
+<ul>
+<li>
+<a href="https://github.com/dailydrip/firestorm">GitHub</a>
+ - Issues and Contributions greatly appreciated
+</li>
+<li>
+<a href="#screencasts">Screencasts</a>
+ - See how it's built
+</li>
+<li>
+<a href="http://forum.firestormforum.org">Forum</a>
+ - Try it out, talk with us
+</li>
+<li>
+Join us on the
+<a href="https://elixir-slackin.herokuapp.com/">Elixir slack</a>
+<code>#firestorm</code>
+channel
+</li>
+</ul>
+</main>
+</section>
+
+<section class='pure-u-1 pure-u-lg-3-4 documentation' id='documentation'>
+<main>
+<h2>Documentation</h2>
+<p>Docs coming soon! For now just check out <a href="https://github.com/dailydrip/firestorm">the code</a> I guess... :)</p>
+</main>
+</section>
+
+<section class='pure-u-1 pure-u-lg-3-4 screencasts' id='screencasts'>
+<main>
+<h2>Screencasts</h2>
+<p>Firestorm was built out in screencasts in <a href="https://www.dailydrip.com/topics/elixir">the DailyDrip Elixir topic</a>.</p>
+</main>
 </section>
 
 
