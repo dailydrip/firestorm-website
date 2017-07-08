@@ -3,16 +3,54 @@
 }
 
 .patrons-recipe {
-	@include centered_flex();
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  justify-content: center;
 	margin-bottom: 2rem;
-	.patron {
+  figure {
 		margin-top: 3.5rem;
 		text-align: center;
+    color: $white;
 		img {
-			max-width: 3.5rem;
-		}
-		&.letter img {
 			max-width: 6.5rem;
+      max-height: 3.5rem;
 		}
-	}
+    > a {
+      color: $white;
+    }
+    > figcaption {
+      margin-top: 1rem;
+      > a {
+        color: white;
+      }
+    }
+  }
+  ul.patron-icons {
+    margin-left: 0;
+    margin-top: 1rem;
+    > li {
+      display: inline-block;
+      margin-left: 1.5rem;
+      font-size: 1.5rem;
+      &:first-child {
+        margin-left: 0;
+      }
+      > a {
+        color: white;
+        &:hover {
+          color: $punch;
+        }
+      }
+    }
+  }
 }
+
+.patron-metadata {
+  display: inline-block;
+  p, a, li {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+  }
+}
+
