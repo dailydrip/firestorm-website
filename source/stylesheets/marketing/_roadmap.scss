@@ -17,25 +17,32 @@
   display: flex;
   flex-flow: column nowrap;
   @include lg {
-    height: 100%;
     padding: 0;
   }
 }
 
 .message-box {
-  @include column_flex();
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include lg {
+    display: flex;
+    flex-flow: row nowrap;
+  }
   &.right {
     margin-left: 50%;
     @include lg {
       justify-content: flex-start;
     }
     .arrow {
-      @include flex_box();
       align-items: center;
       justify-content: flex-start;
     }
     .arrow-line {
       margin-right: .75rem;
+      display: inline-block;
+      margin-bottom: .75rem;
     }
     .message {
       @include lg {
@@ -54,7 +61,7 @@
       align-items: center;
     }
     .arrow-line {
-      margin-left: .75rem;
+      margin: .15rem .25rem 0 .75rem;
     }
     .message {
       @include lg {
@@ -65,7 +72,7 @@
   &.center {
     background: white;
     margin-left: 25%;
-    margin-top: .5rem;
+    margin-top: 2rem;
     position: relative;
     @include lg {
       justify-content: center;
@@ -83,14 +90,13 @@
     .date,
     .text {
       color: $tundora;
-      margin-bottom: 0;
     }
     .date {
       text-align: center;
     }
   }
   .message {
-    width: 7rem;
+    margin: 0 1rem;
     @include lg {
       width: 12rem;
     }
@@ -103,7 +109,8 @@
     font-style: italic;
     font-weight: 200;
   }
-  .text {
+  p.text {
+    margin-bottom: 0;
     font-size: 1rem;
     font-style: italic;
     line-height: 1.25rem;

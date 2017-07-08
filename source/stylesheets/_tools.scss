@@ -51,15 +51,6 @@
   flex-wrap: wrap;
 }
 
-
-// column flexbox
-@mixin column_flex {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 // centered flexbox
 
 @mixin centered_flex {
