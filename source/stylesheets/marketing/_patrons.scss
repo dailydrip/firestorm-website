@@ -2,19 +2,6 @@
 	display: none;
 }
 
-.patrons-container {
-	.head-text {
-		color: $tundora;
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-top: 4.5rem;
-		text-align: center;
-		@include lg {
-			font-size: 1.75rem;
-		}
-	}
-}
-
 .patrons-recipe {
 	@include centered_flex();
 	margin-bottom: 2rem;

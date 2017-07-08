@@ -10,10 +10,10 @@
 @import "tools";
 @import "base";
 @import "./components/navmenu";
-
+@import "./components/main";
 
 // marketing site specific files
-
+@import "./marketing/mission";
 @import "./marketing/homepage";
 @import "./marketing/roadmap";
 @import "./marketing/patrons";

@@ -1,0 +1,38 @@
+section {
+  &:before{
+    @extend .pure-u-lg-1-8;
+    content: '';
+  }
+}
+
+main {
+  color: $white;
+  box-sizing: border-box;
+  @extend .pure-u-1;
+  @extend .pure-u-lg-3-4;
+  @include xs {
+    padding: 0 1rem;
+  }
+  @include lg {
+    padding: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  p, li {
+    font-size: 2rem;
+    line-height: 2.25rem;
+    margin-bottom: 1.25rem;
+  }
+  ul {
+    margin-left: 1rem;
+  }
+	h2 {
+		color: $tundora;
+    font-weight: 600;
+    margin-top: 4.5rem;
+		text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+	}
+}

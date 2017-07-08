@@ -1,0 +1,14 @@
+.pure-u-1-2.message-box{ class: side.to_s }
+  .message
+    %p.date
+      = message[:date]
+    %h3.publicity-text
+      = message[:text].html_safe
+  - unless side == :center
+    .pure-u-1.arrow
+      - if side == :left
+        .arrow-line
+        %i.fa{class: "fa-angle-double-right"}
+      - else
+        %i.fa{class: "fa-angle-double-left"}
+        .arrow-line

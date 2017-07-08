@@ -33,6 +33,26 @@ page '/*.txt', layout: false
 
 helpers do
 
+  def roadmap_messages
+    [
+      roadmap_message("July 10, 2017", "1.0.0-rc1 released."),
+      roadmap_message("April 26, 2017", "First <a href='https://www.kickstarter.com/projects/1003377429/firestorm-an-open-source-forum-in-phoenix-from-eli/posts/1869930'>alpha release announced</a>."),
+      roadmap_message("March - April, 2017", "Lots of work went into building the first prototype and beginning to dogfood."),
+      roadmap_message("February 13, 2017", "<a href='https://www.kickstarter.com/projects/1003377429/firestorm-an-open-source-forum-in-phoenix-from-eli/posts/1806748'>Design assets shared</a> and <a href='https://www.dailydrip.com/topics/elixir'>first 10 free Elixir episodes completed.</a>"),
+      roadmap_message("January 28, 2017", "<a href='https://www.kickstarter.com/projects/1003377429/firestorm-an-open-source-forum-in-phoenix-from-eli/posts/1781464'>Design meetings have been ongoing for four weeks</a>"),
+      roadmap_message("December 23, 2016", "Successfully raised $22,186 with 338 backers."),
+      roadmap_message("November 23, 2016", "The Firestorm started brewing on Kickstarter.")
+    ]
+  end
+
+  def roadmap_message(date, text)
+    { date: date, text: text }
+  end
+
+  def message_box(side: side, message: message)
+    partial "partials/message_box", locals: {side: side, message: message}
+  end
+
   def favicon_link_tag(source='source/images/', options={})
     tag('link', {
       :rel  => 'shortcut icon',

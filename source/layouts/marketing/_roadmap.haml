@@ -1,44 +1,19 @@
 %section.pure-u-1.pure-u-lg-3-4.roadmap#roadmap
-	.roadmap-container.pure-u-1
-		.pure-u-1-2.message-box.left
-			.message
-				%p.date
-					Mar 22, 2017
-				%h3.publicity-text
-					Curabitur lobortis id lorem id bibendum. Ut id consectetur
-			.pure-u-1.arrow
-				%i.fa.fa-angle-double-left
-				.arrow-line
-		.pure-u-1-2.message-box.right
-			.message
-				%p.date
-					Feb 13, 2017
-				%h3.publicity-text
-					Mobile designs done for all major features in the MVP. First 10 episodes of Elixir live on DailyDrip!
-			.pure-u-1.arrow
-				.arrow-line
-				%i.fa.fa-angle-double-right
-		.pure-u-1-2.message-box.left
-			.message
-				%p.date
-					Jan 2017
-				%h3.publicity-text
-					Open source design and features meetings via Bigmarker
-			.pure-u-1.arrow
-				%i.fa.fa-angle-double-left
-				.arrow-line
-		.pure-u-1-2.message-box.right
-			.message
-				%p.date
-					Dec 23, 2016
-				%h3.publicity-text
-					Successfully raised $22,186 with 338 backers.
-			.pure-u-1.arrow
-				.arrow-line
-				%i.fa.fa-angle-double-right
-		.pure-u-1-2.message-box.center
-			.message
-				%p.date
-					Nov 23, 2016
-				%h3.publicity-text
-					The Firestorm started brewing on Kickstarter.
+  %main.roadmap-container.pure-u-1
+    - roadmap_messages[0..-1].each_with_index do |m, i|
+      = message_box message: m, side: (i.even? ? :left : :right)
+    = message_box message: roadmap_messages[-1], side: :center
+    -# .pure-u-1-2.message-box.right
+    -#   .message
+    -#     %p.date
+    -#       Dec 23, 2016
+    -#     %h3.publicity-text
+    -#   .pure-u-1.arrow
+    -#     .arrow-line
+    -#     %i.fa.fa-angle-double-right
+    -# .pure-u-1-2.message-box.center
+    -#   .message
+    -#     %p.date
+    -#       Nov 23, 2016
+    -#     %h3.publicity-text
+    -#       The Firestorm started brewing on Kickstarter.
