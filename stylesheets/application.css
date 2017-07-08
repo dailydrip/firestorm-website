@@ -3862,9 +3862,6 @@ main {
   display: flex;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap; }
-  @media (min-width: 64em) {
-    .roadmap-container {
-      padding: 0; } }
 
 .message-box {
   -ms-flex-align: center;
