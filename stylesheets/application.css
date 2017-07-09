@@ -4020,3 +4020,12 @@ main {
   .patron-metadata p, .patron-metadata a, .patron-metadata li {
     font-size: 1.25rem;
     margin-bottom: 0; }
+
+.screencasts {
+  display: none; }
+
+.documentation {
+  display: none; }
+
+.community {
+  display: none; }
