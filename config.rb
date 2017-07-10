@@ -269,6 +269,7 @@ helpers do
 
   def patron_saints
     [
+      patron_saint('DailyDrip', 'patron-dailydrip.png', 'https://www.dailydrip.com', [['github-alt', 'https://github.com/dailydrip'], ['twitter', 'http://www.twitter.com/dailydripcom'], ['facebook', 'http://facebook.com/dailydripcom']]),
       patron_saint('Herman verschooten bvba', 'patron-verschooten.png', 'http://www.verschooten.net', [['github-alt', 'https://github.com/Herman-verschooten-bvba']]),
       patron_saint('Emerald Kingdom Greenhouse', 'patron-emerald_kingdom_greenhouse.png', 'https://github.com/emeraldkingdom', [['twitter', 'http://twitter.com/autoblackout']]),
       patron_saint('Lasse Ebert ApS', 'patron-lasseebert.png', 'http://lasseebert.dk/', [['github-alt', 'https://github.com/lasseebert'], ['twitter', 'https://twitter.com/lasseebert']]),
