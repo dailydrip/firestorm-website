@@ -39,7 +39,7 @@ helpers do
 
   def roadmap_messages
     [
-      roadmap_message("July 10, 2017", "1.0.0-rc1 released."),
+      roadmap_message("July 10, 2017", "0.9.0 released."),
       roadmap_message("April 26, 2017", "First <a href='https://www.kickstarter.com/projects/1003377429/firestorm-an-open-source-forum-in-phoenix-from-eli/posts/1869930'>alpha release announced</a>."),
       roadmap_message("March - April, 2017", "Lots of work went into building the first prototype and beginning to dogfood."),
       roadmap_message("February 13, 2017", "<a href='https://www.kickstarter.com/projects/1003377429/firestorm-an-open-source-forum-in-phoenix-from-eli/posts/1806748'>Design assets shared</a> and <a href='https://www.dailydrip.com/topics/elixir'>first 10 free Elixir episodes completed.</a>"),
