@@ -6,7 +6,7 @@
     %h2
       Patron Saints
     .pure-u-1.patrons-recipe
-      - patron_saints.each do |patron_saint|
+      - data.patrons.patron_saints.each do |patron_saint|
         %figure.pure-u-1-2.pure-u-lg-1-3.patron
           = link_to patron_saint[:url] do
             = image_tag image_path(patron_saint[:image_file])
@@ -25,7 +25,7 @@
       Patrons of Great Fame
     .pure-u-1.patrons-recipe
       %ul
-        - patrons_of_great_fame.each do |patron|
+        - data.patrons.patrons_of_great_fame.each do |patron|
           %li
             %strong= patron[0]
             .patron-metadata
@@ -35,7 +35,7 @@
       Patrons
     .pure-u-1.patrons-recipe
       %ul
-        - patrons.each do |patron|
+        - data.patrons.patrons.each do |patron|
           %li
             %strong= patron[0]
             .patron-metadata
