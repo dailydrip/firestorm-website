@@ -222,7 +222,8 @@ helpers do
       ["Tom Brukner", "[ [GitHub](https://www.github.com/xbrukner) ]"],
       ["Wendy Smoak", "[ [GitHub](https://www.github.com/wsmoak) ] [ [Twitter](https://www.twitter.com/wsmoak) ] [ [Website](http://wsmoak.net) ]"],
       ["Marcelo De Polli", "[ [GitHub](https://www.github.com/mdepolli) ] [ [Twitter](https://www.twitter.com/mdepolli) ]"],
-      ["Dirk Johnson", ""]
+      ["Dirk Johnson", ""],
+      ["Matt Phillips", "[ [GitHub](https://www.github.com/imattman) ] [ [Twitter](https://www.twitter.com/i_mattman) ]"]
     ]
   end
 
