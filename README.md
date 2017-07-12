@@ -1,5 +1,7 @@
 # firestorm-website
-https://www.firestormforum.org
+
+This is the source code for <https://www.firestormforum.org>. It's a middleman
+site.
 
 ## Inclusion in Patrons
 
@@ -8,7 +10,7 @@ project wouldn't be as awesome as it is.  Inclusion in Patrons file is limited
 to those that donated $20 or more to the
 [Firestorm Kickstarter](kickstarter.com/projects/1003377429/firestorm-an-open-source-forum-in-phoenix-from-eli).
 If you donated and are missing from the Patrons file and wish to be included,
-it means you missed the backer survey. No worries though! To get ourself added,
+it means you missed the backer survey. No worries though! To get yourself added,
 please do the following:
 
 * Email us at support@dailydrip.com and let us know your name and donation amount
